@@ -11,7 +11,7 @@ def check_question_part(question_check):
     try:
         question_check = question_check.split('.')
     except Exception as e:
-        print(f'❌文件格式不对{e}')
+        print(f'❌文件格式不对{e}')  # FIXME: 可以直接写错哪里，"而不是文件格式不对"，Exception是所有报错的父类
         return False
     question_check_num = int(question_check[0])
     if question_check_num < 1:
@@ -25,7 +25,7 @@ def check_options_part(options):
         try:
             option = option.split('.')
         except Exception as e:
-            print(f'❌文件格式不对{e}')
+            print(f'❌文件格式不对{e}')  # FIXME
             return False
         if option[0] not in ['A', 'B', 'C', 'D']:
             print(option[0])
@@ -40,7 +40,7 @@ def check_answer_part(answer):
         answer_check = answer.split(':')
         print(answer_check)
     except Exception as e:
-        print(f'❌文件格式不对{e}')
+        print(f'❌文件格式不对{e}')  # FIXME
         return False
     if answer_check[0] not in ['correct_answer', '答案']:
         print(answer_check[0])

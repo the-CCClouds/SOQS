@@ -7,7 +7,7 @@
       "C. /*  */  ",
       "D. --  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "2. 下面哪个关键字用于定义函数？  ",
@@ -17,7 +17,7 @@
       "C. function  ",
       "D. define  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "3. 在 Python 中，整除运算符是哪一个？  ",
@@ -27,7 +27,7 @@
       "C. %  ",
       "D. **  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "4. 下列哪个数据类型是不可变的？  ",
@@ -37,7 +37,7 @@
       "C. tuple  ",
       "D. set  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "5. 哪个内置函数可以获取对象的长度？  ",
@@ -47,7 +47,7 @@
       "C. length()  ",
       "D. count()  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "6. 如何正确创建一个空集合？  ",
@@ -57,7 +57,7 @@
       "C. set()  ",
       "D. ()  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "7. 下面哪个关键字用于异常处理？  ",
@@ -67,7 +67,7 @@
       "C. finally  ",
       "D. error  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "8. Python 中逻辑“与”运算符是？  ",
@@ -77,7 +77,7 @@
       "C. &  ",
       "D. ||  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "9. 下列哪个方法能把字符串转换为小写？  ",
@@ -87,7 +87,7 @@
       "C. lower()  ",
       "D. casefold()  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "10. 下面哪个语句可以正确导入整个 math 模块？  ",
@@ -97,7 +97,7 @@
       "C. using math  ",
       "D. require math  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "11. 列表推导式的基本语法符号是？  ",
@@ -107,7 +107,7 @@
       "C. ()  ",
       "D. <>  "
     ],
-    "answer": "答案：A  "
+    "correct_answer": "A  "
   },
   {
     "question": "12. 哪个函数能把字符串转为整数？  ",
@@ -117,7 +117,7 @@
       "C. float()  ",
       "D. chr()  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "13. 下面哪个关键字用于循环遍历可迭代对象？  ",
@@ -127,7 +127,7 @@
       "C. for  ",
       "D. iterate  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "14. 切片 `s[1:5]` 包含的起始索引是？  ",
@@ -137,7 +137,7 @@
       "C. 5  ",
       "D. 6  "
     ],
-    "answer": "答案：A  "
+    "correct_answer": "A  "
   },
   {
     "question": "15. 下列哪个不是 Python 内置的基本数据类型？  ",
@@ -147,7 +147,7 @@
       "C. char  ",
       "D. bool  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "16. 如何表示空值（空对象）？  ",
@@ -157,7 +157,7 @@
       "C. nil  ",
       "D. undefined  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "17. 哪个符号用于格式化字符串字面量（f-string）？  ",
@@ -167,7 +167,7 @@
       "C. f\"\"  ",
       "D. @  "
     ],
-    "answer": "答案：C  "
+    "correct_answer": "C  "
   },
   {
     "question": "18. 字典中根据键获取值的方法是？  ",
@@ -177,7 +177,7 @@
       "C. search()  ",
       "D. value()  "
     ],
-    "answer": "答案：A  "
+    "correct_answer": "A  "
   },
   {
     "question": "19. 下列哪个函数可以输出内容到控制台？  ",
@@ -187,7 +187,7 @@
       "C. console.log()  ",
       "D. write()  "
     ],
-    "answer": "答案：B  "
+    "correct_answer": "B  "
   },
   {
     "question": "20. 在 Python 中，如何正确表示一个布尔真值？  ",
@@ -197,6 +197,6 @@
       "C. TRUE  ",
       "D. 1  "
     ],
-    "answer": "答案：B"
+    "correct_answer": "B"
   }
 ]
