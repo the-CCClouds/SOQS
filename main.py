@@ -11,6 +11,9 @@ def main_menu():
     print("4. Exit")  # 退出
     # 还需要写分支代码进入各个模块（封装还是直接写？）
     # return 返回1 or 2 or 3 or 4
+    # 未封装：
+    choice = input("Enter choice (1-4): ")  # 超出1-4范围需要检测
+    return choice
 
 
 def main():
@@ -19,5 +22,43 @@ def main():
     if not os.path.exists("data"):
         os.mkdir("data")
 
+    # 初始化question文件
+    if not os.path.exists("data/question.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
+        with open("data/question.json", "w") as f:
+            json.dump([], f)
+
+    # 初始化leaderboard文件
+    if not os.path.exists("data/leaderboard.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
+        with open("data/leaderboard.json", "w") as f:
+            json.dump([], f)
+
+    while True:
+        # 打开主菜单
+        choice = main_menu()
+
+        if choice == '1':  # 测验
+            # 进测验模块
+            print("Take Quiz")
+
+        elif choice == "2":  # 显示排行榜
+            # 显示排行榜
+            print("View Leaderboard")
+
+        elif choice == "3":  # 管理员系统
+            # 输密码
+            password = input("Enter Admin Password: ")
+            # 判断密码
+            if password == "PASSWORD":
+                # 进管理员系统
+                print("Admin Login")
+            else:
+                # 密码无效，返回主菜单
+                print("Invalid password! Returning to main menu.")
+
+        elif choice == "4":
+            print("Exiting the system, welcome to use next time, goodbye!")
+            break  # 跳出循环
 
 
+if __name__ == "__main__":
+    main()
