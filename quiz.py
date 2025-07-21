@@ -5,18 +5,22 @@ def quiz_menu():
     while True:
         print("\n=== Quiz Menu ===")
         print("1. Take Quiz")  # 测验
-        print("2. Search Questions")  # 搜索题目
-        print("3. Exit to Main Menu")  # 退出至主菜单
+        print("2. Take Quick Questions")  # 快速问答
+        print("3. Search Questions")  # 搜索题目
+        print("4. Exit to Main Menu")  # 退出至主菜单
         choice = input("Enter your choice (1-3) : ")  # FIXME
         # choice = utils.get_input(提示词,可能的选项)
 
-        if choice == "1":  # 测验
+        if choice == '1':  # 测验
             # TODO: take_quiz()
             print("Take Quiz")
-        elif choice == "2":  # 搜索题目
+        elif choice == '2':  # 快速问答
+            # TODO: take_quick_quiz()
+            print("Take Quick Questions")
+        elif choice == '3':  # 搜索题目
             # TODO: search_questions()
             print("Search Questions")
-        elif choice == "3":  # 退出至主菜单
+        elif choice == '4':  # 退出至主菜单
             break
 
 
