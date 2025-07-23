@@ -1,7 +1,9 @@
 import json
 import os
+import quiz
+import utils
 """
-快速问答时间由用户来选择，例如5s档，10s档，不同档不同排名
+快速问答时间由用户来选择，例如10s档，不同档不同排名
 普通模式不限制时长，排名分数第一优先级，时间第二优先级，分数时间相同则并列
 TODO: 排行榜需要做菜单
 
@@ -17,9 +19,10 @@ def main_menu():
     print("4. Exit")  # 退出
     # 还需要写分支代码进入各个模块（封装还是直接写？）
     # return 返回1 or 2 or 3 or 4
-    # TODO: 待封装，和quiz中的回答问题部分共用一个 判断回答是否在那部分范围内，return返回值的def。main_menu()直接return那个def
-    choice = input("Enter choice (1-4): ")  # FIXME: 超出1-4范围需要检测
-    return choice
+    # 已封装，和quiz中的回答问题部分共用一个 判断回答是否在那部分范围内，return返回值的def。main_menu()直接return那个def
+    return utils.get_choice(['1', '2', '3', '4'], "Enter choice (1-4): ")
+    # choice = input("Enter choice (1-4): ")  # 超出1-4范围需要检测
+    # return choice
     # return utils.get_input(提示词,可能的选项)
 
 
@@ -42,8 +45,7 @@ def main():
         # 打开主菜单
         choice = main_menu()
         if choice == '1':  # 测验
-            # TODO: 进测验模块
-            print("Quiz Module")
+            quiz.quiz_menu()
         elif choice == "2":  # 显示排行榜
             # TODO: 显示排行榜
             print("View Leaderboard")
@@ -53,9 +55,9 @@ def main():
                 # TODO: 进管理员系统
                 print("Admin Login")
             else:  # 密码无效，返回主菜单
-                print("Invalid password! Returning to main menu.")
+                print("-Invalid password! Returning to main menu.-")
         elif choice == "4":
-            print("Exiting the system, welcome to use next time, goodbye!")
+            print("-Exiting the system, welcome to use next time, goodbye!-")
             break  # 跳出循环
 
 

@@ -1,202 +1,24 @@
 [
   {
-    "question": "1. 下面哪个符号用于单行注释？  ",
-    "options": [
-      "A. //  ",
-      "B. #  ",
-      "C. /*  */  ",
-      "D. --  "
-    ],
-    "correct_answer": "B  "
+    "question": "What is the capital of France?",
+    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "correct_answer": "C",
+    "explanation": "Paris is the capital and most populous city of France"
   },
   {
-    "question": "2. 下面哪个关键字用于定义函数？  ",
-    "options": [
-      "A. func  ",
-      "B. def  ",
-      "C. function  ",
-      "D. define  "
-    ],
-    "correct_answer": "B  "
+    "question": "Which language is used for Android development?",
+    "options": ["Java", "Python", "Swift", "C++"],
+    "correct_answer": "A",
+    "explanation": "Java is the primary language for Android development"
   },
   {
-    "question": "3. 在 Python 中，整除运算符是哪一个？  ",
+    "question": "What does CPU stand for?",
     "options": [
-      "A. /  ",
-      "B. //  ",
-      "C. %  ",
-      "D. **  "
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Process Unit",
+      "Central Processor Unit"
     ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "4. 下列哪个数据类型是不可变的？  ",
-    "options": [
-      "A. list  ",
-      "B. dict  ",
-      "C. tuple  ",
-      "D. set  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "5. 哪个内置函数可以获取对象的长度？  ",
-    "options": [
-      "A. size()  ",
-      "B. len()  ",
-      "C. length()  ",
-      "D. count()  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "6. 如何正确创建一个空集合？  ",
-    "options": [
-      "A. {}  ",
-      "B. []  ",
-      "C. set()  ",
-      "D. ()  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "7. 下面哪个关键字用于异常处理？  ",
-    "options": [
-      "A. catch  ",
-      "B. except  ",
-      "C. finally  ",
-      "D. error  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "8. Python 中逻辑“与”运算符是？  ",
-    "options": [
-      "A. &&  ",
-      "B. and  ",
-      "C. &  ",
-      "D. ||  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "9. 下列哪个方法能把字符串转换为小写？  ",
-    "options": [
-      "A. to_lower()  ",
-      "B. lowercase()  ",
-      "C. lower()  ",
-      "D. casefold()  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "10. 下面哪个语句可以正确导入整个 math 模块？  ",
-    "options": [
-      "A. include math  ",
-      "B. import math  ",
-      "C. using math  ",
-      "D. require math  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "11. 列表推导式的基本语法符号是？  ",
-    "options": [
-      "A. []  ",
-      "B. {}  ",
-      "C. ()  ",
-      "D. <>  "
-    ],
-    "correct_answer": "A  "
-  },
-  {
-    "question": "12. 哪个函数能把字符串转为整数？  ",
-    "options": [
-      "A. str()  ",
-      "B. int()  ",
-      "C. float()  ",
-      "D. chr()  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "13. 下面哪个关键字用于循环遍历可迭代对象？  ",
-    "options": [
-      "A. foreach  ",
-      "B. loop  ",
-      "C. for  ",
-      "D. iterate  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "14. 切片 `s[1:5]` 包含的起始索引是？  ",
-    "options": [
-      "A. 1  ",
-      "B. 2  ",
-      "C. 5  ",
-      "D. 6  "
-    ],
-    "correct_answer": "A  "
-  },
-  {
-    "question": "15. 下列哪个不是 Python 内置的基本数据类型？  ",
-    "options": [
-      "A. int  ",
-      "B. float  ",
-      "C. char  ",
-      "D. bool  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "16. 如何表示空值（空对象）？  ",
-    "options": [
-      "A. null  ",
-      "B. None  ",
-      "C. nil  ",
-      "D. undefined  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "17. 哪个符号用于格式化字符串字面量（f-string）？  ",
-    "options": [
-      "A. $  ",
-      "B. %  ",
-      "C. f\"\"  ",
-      "D. @  "
-    ],
-    "correct_answer": "C  "
-  },
-  {
-    "question": "18. 字典中根据键获取值的方法是？  ",
-    "options": [
-      "A. get()  ",
-      "B. find()  ",
-      "C. search()  ",
-      "D. value()  "
-    ],
-    "correct_answer": "A  "
-  },
-  {
-    "question": "19. 下列哪个函数可以输出内容到控制台？  ",
-    "options": [
-      "A. echo()  ",
-      "B. print()  ",
-      "C. console.log()  ",
-      "D. write()  "
-    ],
-    "correct_answer": "B  "
-  },
-  {
-    "question": "20. 在 Python 中，如何正确表示一个布尔真值？  ",
-    "options": [
-      "A. true  ",
-      "B. True  ",
-      "C. TRUE  ",
-      "D. 1  "
-    ],
-    "correct_answer": "B"
+    "correct_answer": "A"
   }
 ]

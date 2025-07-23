@@ -1,5 +1,5 @@
 import json
-
+import utils
 
 def admin_menu():
     while True:
@@ -7,8 +7,8 @@ def admin_menu():
         print("1. Add New Question")
         print("2. Search Questions")
         print("3. Exit Admin")
-        choice = input("Enter your choice (1-3) : ")  # FIXME
-        # choice = utils.get_input(提示词,可能的选项)
+        choice = utils.get_choice(['1', '2', '3'], "Enter your choice (1-3) : ")
+        # choice = input("Enter your choice (1-3) : ")
 
         if choice == '1':
             print("add_question")
@@ -25,18 +25,19 @@ def add_question():
     # 输入问题，如问题内容为空直接结束
     question = input("Enter new question:").strip()
     if not question:
-        print("New question cannot be empty.")
+        print("-New question cannot be empty.-")
         return
     # 循环输入选项，如选项内容为空直接结束
     options = []
     for i in range(4):
         option = input(f"Enter option {chr(65 + i)}: ").strip()
         if not option:
-            print("Option cannot be empty.")
+            print("-Option cannot be empty.-")
             return
         options.append(option)
     # 输入正确答案
-    correct_answer = input("Enter correct answer (A-D): ").strip()  # FIXME
+    correct_answer = utils.get_choice(['A', 'B', 'C', 'D'], "Enter correct answer (A-D): ")
+    # correct_answer = input("Enter correct answer (A-D): ").strip()
 
     new_question = {
         "question": question,
