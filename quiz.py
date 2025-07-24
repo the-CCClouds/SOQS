@@ -120,7 +120,7 @@ def calculate_score(score, questions_num, time_elapsed):
 
 def save_results(user_name, score, time_elapsed):
     try:
-        with open('data/leaderboard.json', 'r', encoding="utf-8") as f:
+        with open('data/leaderboard.json', 'r+', encoding="utf-8") as f:
             try:
                 leaderboard = json.load(f)
             except json.JSONDecodeError:
@@ -134,7 +134,7 @@ def save_results(user_name, score, time_elapsed):
                 "timestamp": timestamp
             })
             # 按分数和时间排序
-            leaderboard.sort(key=lambda x: (-x['score'], -x['time']), reverse=True)
+            leaderboard.sort(key=lambda x: (-x['score'], x['time']), reverse=True)
             # TODO: 去重
             # TODO: 只保留前10名
             f.seek(0)
