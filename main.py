@@ -1,5 +1,7 @@
 import json
 import os
+
+import admin
 import quiz
 import utils
 """
@@ -47,13 +49,11 @@ def main():
         if choice == '1':  # 测验
             quiz.quiz_menu()
         elif choice == "2":  # 显示排行榜
-            # TODO: 显示排行榜
-            print("View Leaderboard")
+            quiz.view_leaderboard()
         elif choice == "3":  # 管理员系统
             password = input("Enter Admin Password: ")  # 输密码
             if password == "PASSWORD":  # 判断密码 默认密码是"PASSWORD"
-                # TODO: 进管理员系统
-                print("Admin Login")
+                admin.admin_menu()
             else:  # 密码无效，返回主菜单
                 print("-Invalid password! Returning to main menu.-")
         elif choice == "4":

@@ -4,7 +4,7 @@ def format_duration(time_diff):
     # return str(datetime.timedelta(seconds=time_diff))  # 精确的位数太多，不美观
     hours, rem = divmod(time_diff, 3600)
     minutes, seconds = divmod(rem, 60)
-    return f"{int(hours):02d}:{int(minutes):02d}:{seconds:05.2f}"
+    return f"{int(hours):02d}:{int(minutes):02d}:{seconds:05.3f}"
 
 def get_choice(valid_options, txt):
     while True:
