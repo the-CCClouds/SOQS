@@ -1,13 +1,23 @@
 [
   {
     "question": "What is the capital of France?",
-    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "options": [
+      "London",
+      "Berlin",
+      "Paris",
+      "Madrid"
+    ],
     "correct_answer": "C",
     "explanation": "Paris is the capital and most populous city of France"
   },
   {
     "question": "Which language is used for Android development?",
-    "options": ["Java", "Python", "Swift", "C++"],
+    "options": [
+      "Java",
+      "Python",
+      "Swift",
+      "C++"
+    ],
     "correct_answer": "A",
     "explanation": "Java is the primary language for Android development"
   },
@@ -24,104 +34,184 @@
   },
   {
     "question": "What is the largest planet in our Solar System?",
-    "options": ["Jupiter", "Saturn", "Earth", "Mars"],
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Mars"
+    ],
     "correct_answer": "A",
     "explanation": "Jupiter is the largest planet by mass and volume"
   },
   {
     "question": "What is the chemical formula of water?",
-    "options": ["H₂O", "CO₂", "O₂", "NaCl"],
+    "options": [
+      "H\u2082O",
+      "CO\u2082",
+      "O\u2082",
+      "NaCl"
+    ],
     "correct_answer": "A",
     "explanation": "Water consists of two hydrogen atoms bonded to one oxygen atom"
   },
   {
     "question": "Who wrote the play \"Romeo and Juliet\"?",
-    "options": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
+    "options": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Mark Twain",
+      "Jane Austen"
+    ],
     "correct_answer": "A",
     "explanation": "Shakespeare wrote \"Romeo and Juliet\" around 1595"
   },
   {
     "question": "What is the powerhouse of the cell?",
-    "options": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Endoplasmic Reticulum"
+    ],
     "correct_answer": "B",
-    "explanation": "Mitochondria generate the cell’s ATP through respiration"
+    "explanation": "Mitochondria generate the cell\u2019s ATP through respiration"
   },
   {
     "question": "Which element has atomic number 6?",
-    "options": ["Carbon", "Oxygen", "Nitrogen", "Helium"],
+    "options": [
+      "Carbon",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
+    ],
     "correct_answer": "A",
-    "explanation": "Carbon’s atomic number is 6, indicating six protons in its nucleus"
+    "explanation": "Carbon\u2019s atomic number is 6, indicating six protons in its nucleus"
   },
   {
     "question": "At what temperature does water boil at sea level?",
-    "options": ["90 °C", "100 °C", "110 °C", "120 °C"],
+    "options": [
+      "90\u202f\u00b0C",
+      "100\u202f\u00b0C",
+      "110\u202f\u00b0C",
+      "120\u202f\u00b0C"
+    ],
     "correct_answer": "B",
-    "explanation": "At 1 atm pressure, water boils at 100 °C"
+    "explanation": "At 1 atm pressure, water boils at 100\u202f\u00b0C"
   },
   {
     "question": "Who painted the Mona Lisa?",
-    "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+    "options": [
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo"
+    ],
     "correct_answer": "A",
     "explanation": "Leonardo da Vinci painted the Mona Lisa in the early 16th century"
   },
   {
     "question": "What is the currency of Japan?",
-    "options": ["Yen", "Won", "Dollar", "Euro"],
+    "options": [
+      "Yen",
+      "Won",
+      "Dollar",
+      "Euro"
+    ],
     "correct_answer": "A",
-    "explanation": "The Japanese currency is the yen (¥)"
+    "explanation": "The Japanese currency is the yen (\u00a5)"
   },
   {
     "question": "What is the formula to calculate the area of a circle?",
-    "options": ["πr²", "2πr", "πd", "r²π/2"],
+    "options": [
+      "\u03c0r\u00b2",
+      "2\u03c0r",
+      "\u03c0d",
+      "r\u00b2\u03c0/2"
+    ],
     "correct_answer": "A",
-    "explanation": "Area of a circle is π times the radius squared"
+    "explanation": "Area of a circle is \u03c0 times the radius squared"
   },
   {
     "question": "Who developed the theory of relativity?",
-    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Niels Bohr"
+    ],
     "correct_answer": "B",
     "explanation": "Albert Einstein published the theory of relativity in 1905 (special) and 1915 (general)"
   },
   {
     "question": "What is the smallest prime number?",
-    "options": ["1", "2", "3", "5"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
     "correct_answer": "B",
     "explanation": "2 is the smallest and only even prime number"
   },
   {
     "question": "Which ocean is the largest by surface area?",
-    "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "options": [
+      "Atlantic",
+      "Indian",
+      "Arctic",
+      "Pacific"
+    ],
     "correct_answer": "D",
     "explanation": "The Pacific Ocean covers more area than any other"
   },
   {
     "question": "What is the chemical symbol for gold?",
-    "options": ["Ag", "Au", "Gd", "Ga"],
+    "options": [
+      "Ag",
+      "Au",
+      "Gd",
+      "Ga"
+    ],
     "correct_answer": "B",
     "explanation": "Au comes from the Latin name 'Aurum' for gold"
   },
   {
     "question": "How many continents are there on Earth?",
-    "options": ["5", "6", "7", "8"],
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
     "correct_answer": "C",
     "explanation": "There are seven continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia"
   },
   {
     "question": "In computing, what does RAM stand for?",
-    "options": ["Readily Accessible Memory", "Random Access Memory", "Rapid Allocation Module", "Read Access Module"],
+    "options": [
+      "Readily Accessible Memory",
+      "Random Access Memory",
+      "Rapid Allocation Module",
+      "Read Access Module"
+    ],
     "correct_answer": "B",
     "explanation": "RAM stands for Random Access Memory, used for temporary data storage"
   },
   {
     "question": "What is the chemical symbol for sodium?",
-    "options": ["S", "So", "Na", "Sd"],
+    "options": [
+      "S",
+      "So",
+      "Na",
+      "Sd"
+    ],
     "correct_answer": "C",
     "explanation": "Na is from the Latin 'Natrium', the old name for sodium"
   },
   {
-    "question": "What is the speed of light in vacuum (approximate)?",
-    "options": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
-    "correct_answer": "B",
-    "explanation": "The speed of light is approximately 299,792,458 m/s, often rounded to 3×10⁸ m/s"
+  "question": "What is the speed of light in vacuum (approximate)?",
+  "options": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
+  "correct_answer": "B",
+  "explanation": "The speed of light is approximately 299,792,458 m/s, often rounded to 3×10⁸ m/s"
   }
 ]

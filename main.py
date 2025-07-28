@@ -36,11 +36,11 @@ def main():
 
     # 初始化question文件
     if not os.path.exists("data/question.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
-        with open("data/question.json", "w") as f:
+        with open("data/question.json", "w", encoding="utf-8") as f:
             json.dump([], f)
     # 初始化leaderboard文件
     if not os.path.exists("data/leaderboard.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
-        with open("data/leaderboard.json", "w") as f:
+        with open("data/leaderboard.json", "w", encoding="utf-8") as f:
             json.dump([], f)
 
     while True:

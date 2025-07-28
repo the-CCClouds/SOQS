@@ -23,8 +23,7 @@ def quiz_menu():
             # TODO: take_quick_quiz()
             print("Take Quick Questions")
         elif choice == '3':  # 搜索题目
-            # TODO: search_questions()
-            print("Search Questions")
+            search_question()
         elif choice == '4':  # 退出至主菜单
             break
 
@@ -73,8 +72,7 @@ def take_quiz(user_name):
     print(f"-This quiz has a total of {len(quiz_questions)} questions-")  # 显示题目数量
     # 如果题目少于10题，成绩不计入排行榜
     if len(quiz_questions) < 10:
-        print(
-            "-Because this quiz has less than 10 questions, the results of this quiz are not be included in the leaderboard-")
+        print("-Because this quiz has less than 10 questions, the results of this quiz are not be included in the leaderboard-")
     for i, q in enumerate(quiz_questions):  # 用enumerate同时遍历索引和值
         print(f"Question {i + 1}: {q['question']}")
         for j, option in enumerate(q["options"]):
@@ -155,7 +153,7 @@ def save_results(user_name, score, time_elapsed):
 
 def view_leaderboard():
     try:
-        with open('data/leaderboard.json', 'r') as f:
+        with open('data/leaderboard.json', 'r', encoding="utf-8") as f:
             leaderboard = json.load(f)
 
         print("\n=== Top 10 Leaderboard ===")
@@ -181,3 +179,31 @@ def show_incorrect_answers(questions, user_answers):
             print(f"Your answer: {ans}")
             print(f"Correct answer: {q['correct_answer']}")
             print(f"Explanation: {q.get('explanation', 'No explanation available')}")
+
+
+def search_question():
+    try:
+        with open('data/question.json', 'r', encoding='utf-8') as f:
+            questions = json.load(f)
+    except Exception as e:
+        print(f"No questions available: {str(e)}")
+        return
+
+    keyword = input("Enter search keyword: ").lower().strip()
+    if not keyword:
+        print("Keyword cannot be empty!")
+        return
+
+    results = [q for q in questions if keyword in q['question'].lower()]
+
+    print(f"\nFound {len(results)} matching questions:")
+    for i, q in enumerate(results):
+        print(f"\nQ{i + 1}: {q['question']}")
+        for j, opt in enumerate(q['options']):
+            print(f"   {chr(65 + j)}. {opt}")
+        print(f"Correct: {q['correct_answer']}")
+
+        action = input("Action: (N)ext, any other key to exit: ").strip().upper()
+        if action == 'N':
+            search_question()
+
