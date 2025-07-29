@@ -5,7 +5,6 @@ import utils
 from datetime import datetime
 
 
-# TODO：快速问答时长设置10s
 def quiz_menu():
     while True:
         print("\n=== Quiz Menu ===")
@@ -19,12 +18,9 @@ def quiz_menu():
         if choice == '1':  # 测验
             name = input("Enter your name: ").strip()
             take_quiz(name)
-        elif choice == '2':  # 快速问答
-            # TODO: take_quick_quiz()
-            print("Take Quick Questions")
-        elif choice == '3':  # 搜索题目
+        elif choice == '2':  # 搜索题目
             search_question()
-        elif choice == '4':  # 退出至主菜单
+        elif choice == '3':  # 退出至主菜单
             break
 
 
@@ -73,49 +69,6 @@ def take_quiz(user_name):
     # 如果题目少于10题，成绩不计入排行榜
     if len(quiz_questions) < 10:
         print("-Because this quiz has less than 10 questions, the results of this quiz are not be included in the leaderboard-")
-    for i, q in enumerate(quiz_questions):  # 用enumerate同时遍历索引和值
-        print(f"Question {i + 1}: {q['question']}")
-        for j, option in enumerate(q["options"]):
-            print(f"{chr(j + 65)}. {option}")
-
-        answer = utils.get_choice(['A', 'B', 'C', 'D'], "Your answer is(A-D): ")
-        # answer = input("Your answer is(A-D): ")
-        user_answer.append(answer)
-        if answer == q["correct_answer"]:
-            score += 1
-            print("✅ Correct!")
-        else:
-            print(f"❌ Correct Answer is {q['correct_answer']}")
-
-    end_time = time.time()
-    time_elapsed = end_time - start_time
-
-    # 保存结果
-    calculate_score(score, len(quiz_questions), time_elapsed)
-    if len(quiz_questions) == 10:
-        save_results(user_name, score * 10, utils.format_duration(time_elapsed))
-    show_incorrect_answers(quiz_questions, user_answer)
-
-
-# TODO：快速问答，每题10s倒计时
-def take_quick_quiz(user_name):
-    all_questions = load_questions()
-    if not all_questions:
-        print("No questions available. Contact admin.")
-        return
-
-    # 随机选取10道题
-    quiz_questions = random.sample(all_questions, min(10, len(all_questions)))  # 防止题库内有题目但是小于10题
-    user_answer = []
-    score = 0
-    start_time = time.time()
-
-    print("\n===Quick Quiz Started===")
-    print(f"-This quiz has a total of {len(quiz_questions)} questions-")  # 显示题目数量
-    # 如果题目少于10题，成绩不计入排行榜
-    if len(quiz_questions) < 10:
-        print(
-            "-Because this quiz has less than 10 questions, the results of this quiz are not be included in the leaderboard-")
     for i, q in enumerate(quiz_questions):  # 用enumerate同时遍历索引和值
         print(f"Question {i + 1}: {q['question']}")
         for j, option in enumerate(q["options"]):

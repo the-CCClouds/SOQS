@@ -4,12 +4,6 @@ import os
 import admin
 import quiz
 import utils
-"""
-快速问答时间由用户来选择，例如10s档，不同档不同排名
-普通模式不限制时长，排名分数第一优先级，时间第二优先级，分数时间相同则并列
-TODO: 排行榜需要做菜单
-
-"""
 
 
 def main_menu():
