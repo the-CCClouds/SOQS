@@ -43,7 +43,7 @@ def load_questions():  # 加载问题
         # 验证data结构
         for question in questions:
             # 验证每个question中是否都有 "question", "options", "correct_answer"
-            if not all(key in question for key in ["question", "options", "correct_answer"]):  # 生成器表达式 返回值是bool序列
+            if not all(key in question for key in ["question", "options", "correct_answer", "explanation"]):  # 生成器表达式 返回值是bool序列
                 # print("Invalid question format")
                 raise ValueError("Invalid question format")  # 抛出错误，终止程序
             # 验证每个question的选项是否都有4个
