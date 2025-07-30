@@ -4,7 +4,6 @@ import time
 import utils
 from datetime import datetime
 import threading
-import sys
 
 
 # 全局变量用于跟踪倒计时
