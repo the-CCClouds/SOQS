@@ -2,216 +2,221 @@
   {
     "question": "What is the capital of France?",
     "options": [
-      "London",
-      "Berlin",
-      "Paris",
-      "Madrid"
+      "A. London",
+      "B. Berlin",
+      "C. Paris",
+      "D. Madrid"
     ],
-    "correct_answer": "C",
-    "explanation": "Paris is the capital and most populous city of France"
+    "correct_answer": " C",
+    "explanation": " Paris is the capital and most populous city of France."
   },
   {
     "question": "Which language is used for Android development?",
     "options": [
-      "Java",
-      "Python",
-      "Swift",
-      "C++"
+      "A. Java",
+      "B. Python",
+      "C. Swift",
+      "D. C++"
     ],
-    "correct_answer": "A",
-    "explanation": "Java is the primary language for Android development"
+    "correct_answer": " A",
+    "explanation": " Java is the primary language for Android development."
   },
   {
     "question": "What does CPU stand for?",
     "options": [
-      "Central Processing Unit",
-      "Computer Personal Unit",
-      "Central Process Unit",
-      "Central Processor Unit"
+      "A. Central Processing Unit",
+      "B. Computer Personal Unit",
+      "C. Central Process Unit",
+      "D. Central Processor Unit"
     ],
-    "correct_answer": "A",
-    "explanation": "CPU stands for Central Processing Unit, which executes instructions"
+    "correct_answer": " A",
+    "explanation": " Central Processing Unit executes instructions."
   },
   {
     "question": "What is the largest planet in our Solar System?",
     "options": [
-      "Jupiter",
-      "Saturn",
-      "Earth",
-      "Mars"
+      "A. Jupiter",
+      "B. Saturn",
+      "C. Earth",
+      "D. Mars"
     ],
-    "correct_answer": "A",
-    "explanation": "Jupiter is the largest planet by mass and volume"
+    "correct_answer": " A",
+    "explanation": " Jupiter is the largest planet by mass and volume."
   },
   {
     "question": "What is the chemical formula of water?",
     "options": [
-      "H\u2082O",
-      "CO\u2082",
-      "O\u2082",
-      "NaCl"
+      "A. H₂O",
+      "B. CO₂",
+      "C. O₂",
+      "D. NaCl"
     ],
-    "correct_answer": "A",
-    "explanation": "Water consists of two hydrogen atoms bonded to one oxygen atom"
+    "correct_answer": " A",
+    "explanation": " Water is H₂O."
   },
   {
     "question": "Who wrote the play \"Romeo and Juliet\"?",
     "options": [
-      "William Shakespeare",
-      "Charles Dickens",
-      "Mark Twain",
-      "Jane Austen"
+      "A. William Shakespeare",
+      "B. Charles Dickens",
+      "C. Mark Twain",
+      "D. Jane Austen"
     ],
-    "correct_answer": "A",
-    "explanation": "Shakespeare wrote \"Romeo and Juliet\" around 1595"
+    "correct_answer": " A",
+    "explanation": " Shakespeare wrote it around 1595."
   },
   {
     "question": "What is the powerhouse of the cell?",
     "options": [
-      "Nucleus",
-      "Mitochondria",
-      "Ribosome",
-      "Endoplasmic Reticulum"
+      "A. Nucleus",
+      "B. Mitochondria",
+      "C. Ribosome",
+      "D. Endoplasmic Reticulum"
     ],
-    "correct_answer": "B",
-    "explanation": "Mitochondria generate the cell\u2019s ATP through respiration"
+    "correct_answer": " B",
+    "explanation": " Mitochondria generate ATP."
   },
   {
     "question": "Which element has atomic number 6?",
     "options": [
-      "Carbon",
-      "Oxygen",
-      "Nitrogen",
-      "Helium"
+      "A. Carbon",
+      "B. Oxygen",
+      "C. Nitrogen",
+      "D. Helium"
     ],
-    "correct_answer": "A",
-    "explanation": "Carbon\u2019s atomic number is 6, indicating six protons in its nucleus"
+    "correct_answer": " A",
+    "explanation": " Carbon has six protons."
   },
   {
     "question": "At what temperature does water boil at sea level?",
     "options": [
-      "90\u202f\u00b0C",
-      "100\u202f\u00b0C",
-      "110\u202f\u00b0C",
-      "120\u202f\u00b0C"
+      "A. 90 °C",
+      "B. 100 °C",
+      "C. 110 °C",
+      "D. 120 °C"
     ],
-    "correct_answer": "B",
-    "explanation": "At 1 atm pressure, water boils at 100\u202f\u00b0C"
+    "correct_answer": " B",
+    "explanation": " Water boils at 100 °C at 1 atm."
   },
   {
     "question": "Who painted the Mona Lisa?",
     "options": [
-      "Leonardo da Vinci",
-      "Pablo Picasso",
-      "Vincent van Gogh",
-      "Michelangelo"
+      "A. Leonardo da Vinci",
+      "B. Pablo Picasso",
+      "C. Vincent van Gogh",
+      "D. Michelangelo"
     ],
-    "correct_answer": "A",
-    "explanation": "Leonardo da Vinci painted the Mona Lisa in the early 16th century"
+    "correct_answer": " A",
+    "explanation": " Leonardo painted it in the early 16th century."
   },
   {
     "question": "What is the currency of Japan?",
     "options": [
-      "Yen",
-      "Won",
-      "Dollar",
-      "Euro"
+      "A. Yen",
+      "B. Won",
+      "C. Dollar",
+      "D. Euro"
     ],
-    "correct_answer": "A",
-    "explanation": "The Japanese currency is the yen (\u00a5)"
+    "correct_answer": " A",
+    "explanation": " Japan uses yen."
   },
   {
     "question": "What is the formula to calculate the area of a circle?",
     "options": [
-      "\u03c0r\u00b2",
-      "2\u03c0r",
-      "\u03c0d",
-      "r\u00b2\u03c0/2"
+      "A. πr²",
+      "B. 2πr",
+      "C. πd",
+      "D. r²π/2"
     ],
-    "correct_answer": "A",
-    "explanation": "Area of a circle is \u03c0 times the radius squared"
+    "correct_answer": " A",
+    "explanation": " Area equals π times radius squared."
   },
   {
     "question": "Who developed the theory of relativity?",
     "options": [
-      "Isaac Newton",
-      "Albert Einstein",
-      "Galileo Galilei",
-      "Niels Bohr"
+      "A. Isaac Newton",
+      "B. Albert Einstein",
+      "C. Galileo Galilei",
+      "D. Niels Bohr"
     ],
-    "correct_answer": "B",
-    "explanation": "Albert Einstein published the theory of relativity in 1905 (special) and 1915 (general)"
+    "correct_answer": " B",
+    "explanation": " Einstein published it in 1905 and 1915."
   },
   {
     "question": "What is the smallest prime number?",
     "options": [
-      "1",
-      "2",
-      "3",
-      "5"
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 5"
     ],
-    "correct_answer": "B",
-    "explanation": "2 is the smallest and only even prime number"
+    "correct_answer": " B",
+    "explanation": " 2 is the smallest prime."
   },
   {
     "question": "Which ocean is the largest by surface area?",
     "options": [
-      "Atlantic",
-      "Indian",
-      "Arctic",
-      "Pacific"
+      "A. Atlantic",
+      "B. Indian",
+      "C. Arctic",
+      "D. Pacific"
     ],
-    "correct_answer": "D",
-    "explanation": "The Pacific Ocean covers more area than any other"
+    "correct_answer": " D",
+    "explanation": " The Pacific is the largest."
   },
   {
     "question": "What is the chemical symbol for gold?",
     "options": [
-      "Ag",
-      "Au",
-      "Gd",
-      "Ga"
+      "A. Ag",
+      "B. Au",
+      "C. Gd",
+      "D. Ga"
     ],
-    "correct_answer": "B",
-    "explanation": "Au comes from the Latin name 'Aurum' for gold"
+    "correct_answer": " B",
+    "explanation": " Au is from Latin Aurum."
   },
   {
     "question": "How many continents are there on Earth?",
     "options": [
-      "5",
-      "6",
-      "7",
-      "8"
+      "A. 5",
+      "B. 6",
+      "C. 7",
+      "D. 8"
     ],
-    "correct_answer": "C",
-    "explanation": "There are seven continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia"
+    "correct_answer": " C",
+    "explanation": " Earth has seven continents."
   },
   {
     "question": "In computing, what does RAM stand for?",
     "options": [
-      "Readily Accessible Memory",
-      "Random Access Memory",
-      "Rapid Allocation Module",
-      "Read Access Module"
+      "A. Readily Accessible Memory",
+      "B. Random Access Memory",
+      "C. Rapid Allocation Module",
+      "D. Read Access Module"
     ],
-    "correct_answer": "B",
-    "explanation": "RAM stands for Random Access Memory, used for temporary data storage"
+    "correct_answer": " B",
+    "explanation": " RAM is temporary storage."
   },
   {
     "question": "What is the chemical symbol for sodium?",
     "options": [
-      "S",
-      "So",
-      "Na",
-      "Sd"
+      "A. S",
+      "B. So",
+      "C. Na",
+      "D. Sd"
     ],
-    "correct_answer": "C",
-    "explanation": "Na is from the Latin 'Natrium', the old name for sodium"
+    "correct_answer": " C",
+    "explanation": " Na is from Latin Natrium."
   },
   {
-  "question": "What is the speed of light in vacuum (approximate)?",
-  "options": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
-  "correct_answer": "B",
-  "explanation": "The speed of light is approximately 299,792,458 m/s, often rounded to 3×10⁸ m/s"
+    "question": "What is the speed of light in vacuum (approximate)?",
+    "options": [
+      "A. 3 × 10⁶ m/s",
+      "B. 3 × 10⁸ m/s",
+      "C. 3 × 10¹⁰ m/s",
+      "D. 3 × 10¹² m/s"
+    ],
+    "correct_answer": " B",
+    "explanation": " Light travels at 3×10⁸ m/s."
   }
 ]

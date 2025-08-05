@@ -7,7 +7,7 @@ def admin_menu():
         print("\n==== Admin Panel ====")
         print("1. Add New Question")
         print("2. Search Questions")
-        print("3. ")
+        print("3. Import questions")
         print("4. Exit Admin")
         choice = utils.get_choice(['1', '2', '3', '4'], "Enter your choice (1-4) : ")
         # choice = input("Enter your choice (1-4) : ")
@@ -142,11 +142,11 @@ def load_file_number():  # 加载问题数量的函数
 def load_question_file(file_name):  # 加载文件变量名是文件名字
     try:
         with open(f'data/{file_name}', 'r', encoding='utf-8')as f:
-            print("✅ 成功打开文件")
+            print("✅ Successfully opened the file")
             question = json.load(f)
             return question
     except Exception as e:
-        print('❌题库文件不存在或者格式不对或内容为空', e)
+        print('❌The question bank file does not exist or the format is incorrect or the content is empty', e)
 
 
 def edit_question_file(question, file_name):  # 将旧内容进行覆盖
@@ -158,10 +158,10 @@ def edit_question_file(question, file_name):  # 将旧内容进行覆盖
     try:  # 先确保题库文件存在且是合法 JSON
          f = open(f'data/{file_name}', 'w', encoding='utf-8')
     except Exception as e:
-        print(f'❌找不到文件{e}')
+        print(f'❌File not found{e}')
         return False
     json.dump(question, f, ensure_ascii=False, indent=2)
-    print("✅ 成功覆盖文件")
+    print("✅ Successfully overwrote the file")
     return True
 
 
@@ -179,7 +179,7 @@ def edit_question_file_add(new_question, file_name):  # 将新内容添加到就
     old.extend(new_question)  # 内存里合并
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(old, f, ensure_ascii=False, indent=2)  # 一次性覆盖
-    print("✅ 成功覆盖文件")
+    print("✅ Successfully overwrote the file")
 
 
 def file_clear():  # 清除文件内容
@@ -189,10 +189,10 @@ def file_clear():  # 清除文件内容
         pass
         file.close()
     except Exception as e:
-        print('❌你输入了错误的文件名或者文件位置错误')
+        print('❌You entered the wrong file name or the file location is incorrect')
         print(e)
         return False
-    print("✅ 成功清空文件")
+    print("✅ Successfully cleared the file")
     return True
 
 
@@ -202,7 +202,7 @@ def load_file_main():  # 添加问题(文件形式)
         file = open(f'data/{file_name}', 'r', encoding='utf-8')
         file.flush()
     except Exception as e:
-        print('你输入了一个错误的文件名或者文件名位置不对')
+        print('You entered an incorrect file name or the file name is in the wrong place')
         print(e)
         return False  # 尝试输入和对错误的纠正
     f_num = load_file_number()
@@ -227,7 +227,7 @@ def load_file_main():  # 添加问题(文件形式)
                     repeat = True
                     break
             if repeat:
-                print('❌问题在文件中已经存在')
+                print('❌The problem already exists in the file')
                 idx += 7
                 add_fail += 1
                 continue
@@ -239,19 +239,26 @@ def load_file_main():  # 添加问题(文件形式)
             question = parts[1]
         idx += 1
         # options的处理
-        options = lines[idx:idx+4]
-        idx += 4
+        options=[]
+        for opt in lines[idx:idx+4]:
+            opt = opt.split('.')
+            opt = opt[1]
+            opt=opt.strip(' ')
+            options.append(opt)
+        idx+=4
         # answer的处理
         answer = lines[idx]
         answer = answer.replace('：', ':')
         answer = answer.split(':')
-        answer = answer[0]
+        answer = answer[1]
+        answer = answer.strip(' ')
         idx += 1
         # explanation的处理
         explanation = lines[idx]
         explanation = explanation.replace('：', ':')
         explanation = explanation.split(':')
         explanation = explanation[1]
+        explanation = explanation.strip(' ')
         idx += 1
         add_success += 1
         test_question.append({
@@ -262,5 +269,5 @@ def load_file_main():  # 添加问题(文件形式)
         })
     file.close()
     edit_question_file_add(test_question, 'question.json')
-    print(f"✅ 成功添加进入{add_success}道题目\n❌添加失败{add_fail}道题目")
+    print(f"✅ Successfully added {add_success} questions\n❌Failed to add {add_fail} questions")
     return True

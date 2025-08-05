@@ -267,8 +267,7 @@ def view_leaderboard():
         print("Rank | Name         | Score | Time(s)       | Date")
         print("-" * 65)
         for i, entry in enumerate(leaderboard[:10]):
-            print(
-                f"{i + 1:2}   | {entry['name'][:12]:12} | {entry['score']:5} | {entry['time']:13} | {entry['timestamp']}")
+            print(f"{i + 1:2}   | {entry['name'][:12]:12} | {entry['score']:5} | {entry['time']:13} | {entry['timestamp']}")
 
     except FileNotFoundError:
         print("Leaderboard is empty!")

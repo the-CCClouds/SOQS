@@ -1,0 +1,140 @@
+1:What is the capital of France?
+A. London
+B. Berlin
+C. Paris
+D. Madrid
+Correct Answer: C
+Explanation: Paris is the capital and most populous city of France.
+2:Which language is used for Android development?
+A. Java
+B. Python
+C. Swift
+D. C++
+Correct Answer: A
+Explanation: Java is the primary language for Android development.
+3:What does CPU stand for?
+A. Central Processing Unit
+B. Computer Personal Unit
+C. Central Process Unit
+D. Central Processor Unit
+Correct Answer: A
+Explanation: Central Processing Unit executes instructions.
+4:What is the largest planet in our Solar System?
+A. Jupiter
+B. Saturn
+C. Earth
+D. Mars
+Correct Answer: A
+Explanation: Jupiter is the largest planet by mass and volume.
+5:What is the chemical formula of water?
+A. H₂O
+B. CO₂
+C. O₂
+D. NaCl
+Correct Answer: A
+Explanation: Water is H₂O.
+6:Who wrote the play "Romeo and Juliet"?
+A. William Shakespeare
+B. Charles Dickens
+C. Mark Twain
+D. Jane Austen
+Correct Answer: A
+Explanation: Shakespeare wrote it around 1595.
+7:What is the powerhouse of the cell?
+A. Nucleus
+B. Mitochondria
+C. Ribosome
+D. Endoplasmic Reticulum
+Correct Answer: B
+Explanation: Mitochondria generate ATP.
+8:Which element has atomic number 6?
+A. Carbon
+B. Oxygen
+C. Nitrogen
+D. Helium
+Correct Answer: A
+Explanation: Carbon has six protons.
+9:At what temperature does water boil at sea level?
+A. 90 °C
+B. 100 °C
+C. 110 °C
+D. 120 °C
+Correct Answer: B
+Explanation: Water boils at 100 °C at 1 atm.
+10:Who painted the Mona Lisa?
+A. Leonardo da Vinci
+B. Pablo Picasso
+C. Vincent van Gogh
+D. Michelangelo
+Correct Answer: A
+Explanation: Leonardo painted it in the early 16th century.
+11:What is the currency of Japan?
+A. Yen
+B. Won
+C. Dollar
+D. Euro
+Correct Answer: A
+Explanation: Japan uses yen.
+12:What is the formula to calculate the area of a circle?
+A. πr²
+B. 2πr
+C. πd
+D. r²π/2
+Correct Answer: A
+Explanation: Area equals π times radius squared.
+13:Who developed the theory of relativity?
+A. Isaac Newton
+B. Albert Einstein
+C. Galileo Galilei
+D. Niels Bohr
+Correct Answer: B
+Explanation: Einstein published it in 1905 and 1915.
+14:What is the smallest prime number?
+A. 1
+B. 2
+C. 3
+D. 5
+Correct Answer: B
+Explanation: 2 is the smallest prime.
+15:Which ocean is the largest by surface area?
+A. Atlantic
+B. Indian
+C. Arctic
+D. Pacific
+Correct Answer: D
+Explanation: The Pacific is the largest.
+16:What is the chemical symbol for gold?
+A. Ag
+B. Au
+C. Gd
+D. Ga
+Correct Answer: B
+Explanation: Au is from Latin Aurum.
+17:How many continents are there on Earth?
+A. 5
+B. 6
+C. 7
+D. 8
+Correct Answer: C
+Explanation: Earth has seven continents.
+18:In computing, what does RAM stand for?
+A. Readily Accessible Memory
+B. Random Access Memory
+C. Rapid Allocation Module
+D. Read Access Module
+Correct Answer: B
+Explanation: RAM is temporary storage.
+19:What is the chemical symbol for sodium?
+A. S
+B. So
+C. Na
+D. Sd
+Correct Answer: C
+Explanation: Na is from Latin Natrium.
+20:What is the speed of light in vacuum (approximate)?
+A. 3 × 10⁶ m/s
+B. 3 × 10⁸ m/s
+C. 3 × 10¹⁰ m/s
+D. 3 × 10¹² m/s
+Correct Answer: B
+Explanation: Light travels at 3×10⁸ m/s.
