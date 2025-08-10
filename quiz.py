@@ -6,31 +6,25 @@ from datetime import datetime
 import threading
 
 
-# 全局变量用于跟踪倒计时
+# A global variable is used to track the countdown
 TIMER_ACTIVE = True
-TIME_REMAINING = 300  # 5分钟 = 300秒
-
-
-# 自定义超时异常
-# class TimeoutError(Exception):
-#     pass
-
+TIME_REMAINING = 300  # 5 minutes = 300 seconds
 
 def quiz_menu():
     while True:
         print("\n=== Quiz Menu ===")
-        print("1. Take Quiz")  # 测验
-        print("2. Search Questions")  # 搜索题目
-        print("3. Exit to Main Menu")  # 退出至主菜单
+        print("1. Take Quiz")
+        print("2. Search Questions")
+        print("3. Exit to Main Menu")
         choice = utils.get_choice(['1', '2', '3'], "Enter your choice (1-3): ")
         # choice = input("Enter your choice (1-4) : ")
 
-        if choice == '1':  # 测验
+        if choice == '1':  # test
             name = input("Enter your name: ").strip()
             take_quiz(name)
-        elif choice == '2':  # 搜索题目
+        elif choice == '2':  # Search questions
             search_question()
-        elif choice == '3':  # 退出至主菜单
+        elif choice == '3':  # Exit to the main menu
             break
 
 
@@ -39,33 +33,33 @@ def load_questions():  # 加载问题
         with open("data/question.json", "r", encoding="utf-8") as f:
             questions = json.load(f)
         # questions_num = len(questions)
-        # 验证data结构
+        # Verify data structure
         for question in questions:
-            # 验证每个question中是否都有 "question", "options", "correct_answer", "explanation"
+            # Verify that each question contains "question", "options", "correct_answer", and "explanation"
             if not all(key in question for key in ["question", "options", "correct_answer", "explanation"]):  # 生成器表达式 返回值是bool序列
                 # print("Invalid question format")
-                raise ValueError("Invalid question format")  # 抛出错误，终止程序
-            # 验证每个question的选项是否都有4个
+                raise ValueError("Invalid question format")  # Throw an error and terminate the program
+            # Verify that each question has 4 options
             if len(question["options"]) != 4:
                 raise ValueError("Each question must have 4 options")
         return questions
 
-    except FileNotFoundError:  # 文件路径错误
+    except FileNotFoundError:  # wrong file path
         print("Error: Questions file not found")
         return []
-    except json.JSONDecodeError:  # 不符合json格式
+    except json.JSONDecodeError:  # Does not conform to json format
         print("Error: Invalid JSON format")
         return []
-    except Exception as e:  # 其他错误
+    except Exception as e:  # Other errors
         print(f"Error loading questions: {e}")
         return []
 
 
-# 倒计时线程函数
+# Countdown thread function
 def countdown_timer():
     global TIME_REMAINING, TIMER_ACTIVE
 
-    # 设置提醒点：1.25分钟(75秒), 2.5分钟(150秒), 3.75分钟(225秒)
+    # Set reminder time: 1.25 minutes (75 seconds), 2.5 minutes (150 seconds), 3.75 minutes (225 seconds)
     reminders = [225, 150, 75]
     next_reminder = reminders.pop() if reminders else None
 
@@ -73,97 +67,57 @@ def countdown_timer():
         time.sleep(1)
         TIME_REMAINING -= 1
 
-        # 检查是否需要提醒
+        # Check if a reminder is needed
         if next_reminder and TIME_REMAINING <= next_reminder:
             minutes = next_reminder // 60
             seconds = next_reminder % 60
             print(f"\n⏰ Time reminder: {minutes} minutes {seconds} seconds remaining")
             next_reminder = reminders.pop() if reminders else None
 
-    # 时间结束
+    # end of time
     if TIME_REMAINING <= 0 and TIMER_ACTIVE:
         print("\n⏰ Time's up! Quiz ended automatically")
-
-
-# 获取超时输入
-# def get_choice_with_timeout(valid_options, prompt, timeout):
-#     start_time = time.time()
-#     print(prompt, end='', flush=True)
-
-    # while True:
-    #     检查是否超时
-    #     if time.time() - start_time > timeout:
-    #         raise TimeoutError("Input timeout")
-
-        # Windows 特定的输入检查
-        # if sys.platform == "win32":
-        #     import msvcrt
-        #     if msvcrt.kbhit():
-        #         char = msvcrt.getwch()
-        #         if char in ['\r', '\n']:
-        #             continue
-        #         user_input = char.upper()
-        #         print(user_input, end='', flush=True)
-        #         if user_input in valid_options:
-        #             print()  # 换行
-        #             return user_input
-        #         print(f"\nInvalid input. Valid options: {', '.join(valid_options)}")
-        #         print(prompt, end='', flush=True)
-        # else:
-            # Unix
-            # import select
-            # rlist, _, _ = select.select([sys.stdin], [], [], 0.1)
-            # if rlist:
-            #     user_input = sys.stdin.readline().strip().upper()
-            #     if user_input in valid_options:
-            #         return user_input
-            #     print(f"Invalid input. Valid options: {', '.join(valid_options)}")
-            #     print(prompt, end='', flush=True)
-        #
-        # 避免高CPU使用率
-        # time.sleep(0.05)
 
 
 def take_quiz(user_name):
     global TIMER_ACTIVE, TIME_REMAINING
 
-    # 重置计时器状态
+    # Reset timer state
     TIMER_ACTIVE = True
-    TIME_REMAINING = 300  # 10分钟 = 600秒
-
+    TIME_REMAINING = 300  # 10 minutes = 600 seconds
     all_questions = load_questions()
     if not all_questions:
         print("No questions available. Contact admin.")
         return
 
-    # 随机选取10道题
+    # Randomly select 10 questions
     quiz_questions = random.sample(all_questions, min(10, len(all_questions)))
     user_answer = []
     score = 0
     start_time = time.time()
 
-    # 启动倒计时线程
+    # Start the countdown thread
     timer_thread = threading.Thread(target=countdown_timer)
-    timer_thread.daemon = True  # 设置为守护线程
+    timer_thread.daemon = True  # Set as daemon thread
     timer_thread.start()
 
     print("\n=== Quiz Started ===")
     print(f"- This quiz contains {len(quiz_questions)} questions -")
     print(f"- Total time limit: 10 minutes -")
 
-    # 如果题目少于10题，成绩不计入排行榜
+    # If there are less than 10 questions, the score will not be included in the ranking list
     if len(quiz_questions) < 10:
         print("- Note: Less than 10 questions available, results will not be saved to leaderboard -")
 
-    # 开始答题
+    # Start answering questions
     for i, q in enumerate(quiz_questions):
-        # 检查时间是否用完
+        #Check if time has expired
         if TIME_REMAINING <= 0:
             print("\n⏰ Time's up! Quiz ended")
             break
 
-        # 在第5题完成后显示时间使用情况
-        if i == 5:  # 第6题（下标为5）
+        # Display time usage after question 5 is completed
+        if i == 5:  # Question 6 (subscript 5)
             elapsed = time.time() - start_time
             elapsed_min = int(elapsed // 60)
             elapsed_sec = int(elapsed % 60)
@@ -185,15 +139,15 @@ def take_quiz(user_name):
         else:
             print(f"❌ Correct answer is {q['correct_answer']}")
 
-    # 停止计时器
+    # Stop timer
     TIMER_ACTIVE = False
     end_time = time.time()
     time_elapsed = end_time - start_time
 
-    # 确保计时线程结束
+    # Ensure that the timing thread ends
     timer_thread.join(timeout=1)
 
-    # 计算并显示结果
+    # Calculate and display the results
     calculate_score(score, len(quiz_questions), time_elapsed)
     if len(quiz_questions) == 10:
         save_results(user_name, score * 10, utils.format_duration(time_elapsed))
@@ -237,18 +191,7 @@ def save_results(user_name, score, time_elapsed):
                 leaderboard,
                 key=lambda x: (-x['score'], x['time'])
             )
-
-            # 去重，同一个名字只保留最好成绩
-            # unique_leaderboard = []
-            # seen_names = set()
-            # for entry in sorted_leaderboard:
-            #     if entry['name'] not in seen_names:
-            #         unique_leaderboard.append(entry)
-            #         seen_names.add(entry['name'])
-            # 只保留前10名
-            # top_10 = unique_leaderboard[:10]
-
-            # 只保留前10名
+            # Only keep the top 10
             top_10 = sorted_leaderboard[:10]
             f.seek(0)
             json.dump(top_10, f, indent=2)
@@ -289,7 +232,7 @@ def show_incorrect_answers(questions, user_answers):
             print(f"Correct answer: {q['correct_answer']}")
             print(f"Explanation: {q.get('explanation', 'No explanation available')}")
 
-    # 如果没有错题，显示祝贺信息
+    # If there are no mistakes, display a congratulatory message
     if incorrect_count == 0:
         print("Congratulations! No incorrect answers")
 
@@ -319,3 +262,5 @@ def search_question():
         action = input("Action: (N)ext, any other key to exit: ").strip().upper()
         if action == 'N':
             search_question()
+if __name__ == '__main__':
+    quiz_menu()
