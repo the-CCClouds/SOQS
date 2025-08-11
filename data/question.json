@@ -2,221 +2,221 @@
   {
     "question": "What is the capital of France?",
     "options": [
-      "A. London",
-      "B. Berlin",
-      "C. Paris",
-      "D. Madrid"
+      "London",
+      "Berlin",
+      "Paris",
+      "Madrid"
     ],
-    "correct_answer": " C",
-    "explanation": " Paris is the capital and most populous city of France."
+    "correct_answer": "C",
+    "explanation": "Paris is the capital and most populous city of France."
   },
   {
     "question": "Which language is used for Android development?",
     "options": [
-      "A. Java",
-      "B. Python",
-      "C. Swift",
-      "D. C++"
+      "Java",
+      "Python",
+      "Swift",
+      "C++"
     ],
-    "correct_answer": " A",
-    "explanation": " Java is the primary language for Android development."
+    "correct_answer": "A",
+    "explanation": "Java is the primary language for Android development."
   },
   {
     "question": "What does CPU stand for?",
     "options": [
-      "A. Central Processing Unit",
-      "B. Computer Personal Unit",
-      "C. Central Process Unit",
-      "D. Central Processor Unit"
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Process Unit",
+      "Central Processor Unit"
     ],
-    "correct_answer": " A",
-    "explanation": " Central Processing Unit executes instructions."
+    "correct_answer": "A",
+    "explanation": "Central Processing Unit executes instructions."
   },
   {
     "question": "What is the largest planet in our Solar System?",
     "options": [
-      "A. Jupiter",
-      "B. Saturn",
-      "C. Earth",
-      "D. Mars"
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Mars"
     ],
-    "correct_answer": " A",
-    "explanation": " Jupiter is the largest planet by mass and volume."
+    "correct_answer": "A",
+    "explanation": "Jupiter is the largest planet by mass and volume."
   },
   {
     "question": "What is the chemical formula of water?",
     "options": [
-      "A. H₂O",
-      "B. CO₂",
-      "C. O₂",
-      "D. NaCl"
+      "H₂O",
+      "CO₂",
+      "O₂",
+      "NaCl"
     ],
-    "correct_answer": " A",
-    "explanation": " Water is H₂O."
+    "correct_answer": "A",
+    "explanation": "Water is H₂O."
   },
   {
     "question": "Who wrote the play \"Romeo and Juliet\"?",
     "options": [
-      "A. William Shakespeare",
-      "B. Charles Dickens",
-      "C. Mark Twain",
-      "D. Jane Austen"
+      "William Shakespeare",
+      "Charles Dickens",
+      "Mark Twain",
+      "Jane Austen"
     ],
-    "correct_answer": " A",
-    "explanation": " Shakespeare wrote it around 1595."
+    "correct_answer": "A",
+    "explanation": "Shakespeare wrote it around 1595."
   },
   {
     "question": "What is the powerhouse of the cell?",
     "options": [
-      "A. Nucleus",
-      "B. Mitochondria",
-      "C. Ribosome",
-      "D. Endoplasmic Reticulum"
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Endoplasmic Reticulum"
     ],
-    "correct_answer": " B",
-    "explanation": " Mitochondria generate ATP."
+    "correct_answer": "B",
+    "explanation": "Mitochondria generate ATP."
   },
   {
     "question": "Which element has atomic number 6?",
     "options": [
-      "A. Carbon",
-      "B. Oxygen",
-      "C. Nitrogen",
-      "D. Helium"
+      "Carbon",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
     ],
-    "correct_answer": " A",
-    "explanation": " Carbon has six protons."
+    "correct_answer": "A",
+    "explanation": "Carbon has six protons."
   },
   {
     "question": "At what temperature does water boil at sea level?",
     "options": [
-      "A. 90 °C",
-      "B. 100 °C",
-      "C. 110 °C",
-      "D. 120 °C"
+      "90 °C",
+      "100 °C",
+      "110 °C",
+      "120 °C"
     ],
-    "correct_answer": " B",
-    "explanation": " Water boils at 100 °C at 1 atm."
+    "correct_answer": "B",
+    "explanation": "Water boils at 100 °C at 1 atm."
   },
   {
     "question": "Who painted the Mona Lisa?",
     "options": [
-      "A. Leonardo da Vinci",
-      "B. Pablo Picasso",
-      "C. Vincent van Gogh",
-      "D. Michelangelo"
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo"
     ],
-    "correct_answer": " A",
-    "explanation": " Leonardo painted it in the early 16th century."
+    "correct_answer": "A",
+    "explanation": "Leonardo painted it in the early 16th century."
   },
   {
     "question": "What is the currency of Japan?",
     "options": [
-      "A. Yen",
-      "B. Won",
-      "C. Dollar",
-      "D. Euro"
+      "Yen",
+      "Won",
+      "Dollar",
+      "Euro"
     ],
-    "correct_answer": " A",
-    "explanation": " Japan uses yen."
+    "correct_answer": "A",
+    "explanation": "Japan uses yen."
   },
   {
     "question": "What is the formula to calculate the area of a circle?",
     "options": [
-      "A. πr²",
-      "B. 2πr",
-      "C. πd",
-      "D. r²π/2"
+      "πr²",
+      "2πr",
+      "πd",
+      "r²π/2"
     ],
-    "correct_answer": " A",
-    "explanation": " Area equals π times radius squared."
+    "correct_answer": "A",
+    "explanation": "Area equals π times radius squared."
   },
   {
     "question": "Who developed the theory of relativity?",
     "options": [
-      "A. Isaac Newton",
-      "B. Albert Einstein",
-      "C. Galileo Galilei",
-      "D. Niels Bohr"
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Niels Bohr"
     ],
-    "correct_answer": " B",
-    "explanation": " Einstein published it in 1905 and 1915."
+    "correct_answer": "B",
+    "explanation": "Einstein published it in 1905 and 1915."
   },
   {
     "question": "What is the smallest prime number?",
     "options": [
-      "A. 1",
-      "B. 2",
-      "C. 3",
-      "D. 5"
+      "1",
+      "2",
+      "3",
+      "5"
     ],
-    "correct_answer": " B",
-    "explanation": " 2 is the smallest prime."
+    "correct_answer": "B",
+    "explanation": "2 is the smallest prime."
   },
   {
     "question": "Which ocean is the largest by surface area?",
     "options": [
-      "A. Atlantic",
-      "B. Indian",
-      "C. Arctic",
-      "D. Pacific"
+      "Atlantic",
+      "Indian",
+      "Arctic",
+      "Pacific"
     ],
-    "correct_answer": " D",
-    "explanation": " The Pacific is the largest."
+    "correct_answer": "D",
+    "explanation": "The Pacific is the largest."
   },
   {
     "question": "What is the chemical symbol for gold?",
     "options": [
-      "A. Ag",
-      "B. Au",
-      "C. Gd",
-      "D. Ga"
+      "Ag",
+      "Au",
+      "Gd",
+      "Ga"
     ],
-    "correct_answer": " B",
-    "explanation": " Au is from Latin Aurum."
+    "correct_answer": "B",
+    "explanation": "Au is from Latin Aurum."
   },
   {
     "question": "How many continents are there on Earth?",
     "options": [
-      "A. 5",
-      "B. 6",
-      "C. 7",
-      "D. 8"
+      "5",
+      "6",
+      "7",
+      "8"
     ],
-    "correct_answer": " C",
-    "explanation": " Earth has seven continents."
+    "correct_answer": "C",
+    "explanation": "Earth has seven continents."
   },
   {
     "question": "In computing, what does RAM stand for?",
     "options": [
-      "A. Readily Accessible Memory",
-      "B. Random Access Memory",
-      "C. Rapid Allocation Module",
-      "D. Read Access Module"
+      "Readily Accessible Memory",
+      "Random Access Memory",
+      "Rapid Allocation Module",
+      "Read Access Module"
     ],
-    "correct_answer": " B",
-    "explanation": " RAM is temporary storage."
+    "correct_answer": "B",
+    "explanation": "RAM is temporary storage."
   },
   {
     "question": "What is the chemical symbol for sodium?",
     "options": [
-      "A. S",
-      "B. So",
-      "C. Na",
-      "D. Sd"
+      "S",
+      "So",
+      "Na",
+      "Sd"
     ],
-    "correct_answer": " C",
-    "explanation": " Na is from Latin Natrium."
+    "correct_answer": "C",
+    "explanation": "Na is from Latin Natrium."
   },
   {
     "question": "What is the speed of light in vacuum (approximate)?",
     "options": [
-      "A. 3 × 10⁶ m/s",
-      "B. 3 × 10⁸ m/s",
-      "C. 3 × 10¹⁰ m/s",
-      "D. 3 × 10¹² m/s"
+      "3 × 10⁶ m/s",
+      "3 × 10⁸ m/s",
+      "3 × 10¹⁰ m/s",
+      "3 × 10¹² m/s"
     ],
-    "correct_answer": " B",
-    "explanation": " Light travels at 3×10⁸ m/s."
+    "correct_answer": "B",
+    "explanation": "Light travels at 3×10⁸ m/s."
   }
 ]

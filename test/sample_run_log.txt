@@ -1,0 +1,263 @@
+D:\compiler\Python\python.exe D:\code\BIC1114\SOQS\main.py 
+
+===Smart Online Quiz System ===
+Welcome to Smart Online Quiz System
+1. Quiz Module
+2. View Leaderboard
+3. Admin Login
+4. Exit
+Enter choice (1-4): 3
+Enter Admin Password: PASSWORD
+
+==== Admin Panel ====
+1. Add New Question
+2. Search Questions
+3. Import questions
+4. Exit Admin
+Enter your choice (1-4) : 3
+please input file name:1.txt
+✅ Successfully opened the file
+✅ Successfully overwrote the file
+✅ Successfully added 20 questions
+❌Failed to add 0 questions
+
+==== Admin Panel ====
+1. Add New Question
+2. Search Questions
+3. Import questions
+4. Exit Admin
+Enter your choice (1-4) : 4
+
+===Smart Online Quiz System ===
+Welcome to Smart Online Quiz System
+1. Quiz Module
+2. View Leaderboard
+3. Admin Login
+4. Exit
+Enter choice (1-4): 1
+
+=== Quiz Menu ===
+1. Take Quiz
+2. Search Questions
+3. Exit to Main Menu
+Enter your choice (1-3): 1
+Enter your name: Shao
+
+=== Quiz Started ===
+- This quiz contains 10 questions -
+- Total time limit: 10 minutes -
+
+Question 1/10: What is the chemical symbol for sodium?
+A. S
+B. So
+C. Na
+D. Sd
+Your answer (A-D): A
+❌ Correct answer is C
+
+Question 2/10: Which language is used for Android development?
+A. Java
+B. Python
+C. Swift
+D. C++
+Your answer (A-D): A
+✅ Correct!
+
+Question 3/10: What is the smallest prime number?
+A. 1
+B. 2
+C. 3
+D. 5
+Your answer (A-D): b
+✅ Correct!
+
+Question 4/10: At what temperature does water boil at sea level?
+A. 90 °C
+B. 100 °C
+C. 110 °C
+D. 120 °C
+Your answer (A-D): b
+✅ Correct!
+
+Question 5/10: Who developed the theory of relativity?
+A. Isaac Newton
+B. Albert Einstein
+C. Galileo Galilei
+D. Niels Bohr
+Your answer (A-D): b
+✅ Correct!
+
+⏱️ Time update: Completed 5 questions in 0 minutes 38 seconds
+⏱️ Time update: 4 minutes 22 seconds remaining
+
+Question 6/10: What is the capital of France?
+A. London
+B. Berlin
+C. Paris
+D. Madrid
+Your answer (A-D): c
+✅ Correct!
+
+Question 7/10: What is the largest planet in our Solar System?
+A. Jupiter
+B. Saturn
+C. Earth
+D. Mars
+Your answer (A-D): a
+✅ Correct!
+
+Question 8/10: What is the powerhouse of the cell?
+A. Nucleus
+B. Mitochondria
+C. Ribosome
+D. Endoplasmic Reticulum
+Your answer (A-D): c
+❌ Correct answer is B
+
+Question 9/10: In computing, what does RAM stand for?
+A. Readily Accessible Memory
+B. Random Access Memory
+C. Rapid Allocation Module
+D. Read Access Module
+Your answer (A-D): b
+✅ Correct!
+
+Question 10/10: What is the currency of Japan?
+A. Yen
+B. Won
+C. Dollar
+D. Euro
+Your answer (A-D): a
+✅ Correct!
+
+=== Quiz Results ===
+Score: 80.0%.
+Performance: Good!
+Time taken: 00:01:1.488
+
+=== Incorrect Answers Review ===
+
+Question 1: What is the chemical symbol for sodium?
+Your answer: A
+Correct answer: C
+Explanation: Na is from Latin Natrium.
+
+Question 8: What is the powerhouse of the cell?
+Your answer: C
+Correct answer: B
+Explanation: Mitochondria generate ATP.
+
+=== Quiz Menu ===
+1. Take Quiz
+2. Search Questions
+3. Exit to Main Menu
+Enter your choice (1-3): 2
+Enter search keyword: language
+
+Found 1 matching questions:
+
+Q1: Which language is used for Android development?
+   A. Java
+   B. Python
+   C. Swift
+   D. C++
+Correct: A
+Action: (N)ext, any other key to exit: 
+
+=== Quiz Menu ===
+1. Take Quiz
+2. Search Questions
+3. Exit to Main Menu
+Enter your choice (1-3): 3
+
+===Smart Online Quiz System ===
+Welcome to Smart Online Quiz System
+1. Quiz Module
+2. View Leaderboard
+3. Admin Login
+4. Exit
+Enter choice (1-4): 2
+
+=== Top 10 Leaderboard ===
+Rank | Name         | Score | Time(s)       | Date
+-----------------------------------------------------------------
+ 1   | Shao         |    80 | 00:01:1.488   | 2025-08-12 00:30:10
+ 2   | zhou         |    60 | 00:00:6.135   | 2025-07-27 16:03:02
+ 3   | 1            |    60 | 00:00:7.272   | 2025-07-27 15:46:07
+ 4   | yuan         |    50 | 00:00:3.358   | 2025-07-27 16:14:17
+ 5   | 2            |    50 | 00:00:3.613   | 2025-07-27 15:47:20
+ 6   | 4            |    50 | 00:00:4.629   | 2025-07-27 15:50:47
+ 7   | shao         |    50 | 00:00:5.165   | 2025-07-27 16:32:21
+ 8   | jiang        |    50 | 00:00:6.670   | 2025-07-27 15:55:36
+ 9   | ge           |    40 | 00:00:4.544   | 2025-07-27 16:13:40
+10   | xu           |    40 | 00:00:6.441   | 2025-07-27 16:12:33
+
+===Smart Online Quiz System ===
+Welcome to Smart Online Quiz System
+1. Quiz Module
+2. View Leaderboard
+3. Admin Login
+4. Exit
+Enter choice (1-4): 3
+Enter Admin Password: PASSWORD
+
+==== Admin Panel ====
+1. Add New Question
+2. Search Questions
+3. Import questions
+4. Exit Admin
+Enter your choice (1-4) : 1
+
+=== Add New Question ===
+Enter new question:What is the largest mammal on Earth?
+Enter option A: African Elephant
+Enter option B: Blue Whale
+Enter option C: Giraffe
+Enter option D: Polar Bear
+Enter correct answer (A-D): B
+Explanation (optional): The Blue Whale can reach lengths of up to 30 meters.
+Question added successfully!
+
+==== Admin Panel ====
+1. Add New Question
+2. Search Questions
+3. Import questions
+4. Exit Admin
+Enter your choice (1-4) : 2
+Enter search keyword: Earth
+
+Found 2 matching questions:
+
+Q1: How many continents are there on Earth?
+   A. 5
+   B. 6
+   C. 7
+   D. 8
+Correct: C
+Action: (E)dit, (D)elete, (N)ext: n
+
+Q2: What is the largest mammal on Earth?
+   A. African Elephant
+   B. Blue Whale
+   C. Giraffe
+   D. Polar Bear
+Correct: B
+Action: (E)dit, (D)elete, (N)ext: n
+
+==== Admin Panel ====
+1. Add New Question
+2. Search Questions
+3. Import questions
+4. Exit Admin
+Enter your choice (1-4) : 4
+
+===Smart Online Quiz System ===
+Welcome to Smart Online Quiz System
+1. Quiz Module
+2. View Leaderboard
+3. Admin Login
+4. Exit
+Enter choice (1-4): 4
+-Exiting the system, welcome to use next time, goodbye!-
+
+Process finished with exit code 0
