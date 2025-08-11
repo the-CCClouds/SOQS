@@ -50,15 +50,17 @@ python main.py
 
 ## File Structure
 ```
-├── main.py             # Main application
-├── quiz.py             # Quiz logic and functions
-├── admin.py            # Admin management tools
-├── utils.py            # Helper functions
-├── data/               # Data storage
-│   ├── question.json   # Quiz questions database
-│   ├── leaderboard.json# Score records
-│   └── 1.txt           # Sample import file
-└── README.md           # This documentation
+├── main.py                     # Main application
+├── quiz.py                     # Quiz logic and functions
+├── admin.py                    # Admin management tools
+├── utils.py                    # Helper functions
+├── data/                       # Data storage
+│   ├── question.json           # Quiz questions database
+│   ├── leaderboard.json        # Score records
+│   └── 1.txt                   # Sample import file
+├── test/                       # test folder
+│   └── sample_run_log.txt      # Sample input/output logs or test results 
+└── README.md                   # This documentation
 ```
 
 ## Data Formats
