@@ -262,5 +262,3 @@ def search_question():
         action = input("Action: (N)ext, any other key to exit: ").strip().upper()
         if action == 'N':
             search_question()
-if __name__ == '__main__':
-    quiz_menu()
