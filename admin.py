@@ -282,5 +282,3 @@ def load_file_main():
     edit_question_file_add(test_question, 'question.json')
     print(f"✅ Successfully added {add_success} questions\n❌Failed to add {add_fail} questions")
     return True
-if __name__ == '__main__':
-    pass
