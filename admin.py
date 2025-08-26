@@ -50,7 +50,7 @@ def add_question():
     }
 
     try:
-        with open('data/question.json', 'r+', encoding='utf-8') as f:  # 读写模式打开
+        with open('data/question.json', 'r+', encoding='utf-8') as f:  # Read-write mode on
             questions = json.load(f)
             #Check for duplicate questions
             if any(q['question'] == question for q in questions):
@@ -168,7 +168,7 @@ def edit_question_file(question, file_name):
     return True
 
 
-def edit_question_file_add(new_question, file_name):  # 将新内容添加到就内容并进行合并覆盖
+def edit_question_file_add(new_question, file_name):  # Add new content to old content and merge it
     """
     :param new_question:The name of the variable you added
     :return: None
