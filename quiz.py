@@ -36,7 +36,7 @@ def load_questions():  # 加载问题
         # Verify data structure
         for question in questions:
             # Verify that each question contains "question", "options", "correct_answer", and "explanation"
-            if not all(key in question for key in ["question", "options", "correct_answer", "explanation"]):  # 生成器表达式 返回值是bool序列
+            if not all(key in question for key in ["question", "options", "correct_answer", "explanation"]):  # Generator expression returns a bool sequence
                 # print("Invalid question format")
                 raise ValueError("Invalid question format")  # Throw an error and terminate the program
             # Verify that each question has 4 options
@@ -168,7 +168,7 @@ def calculate_score(score, questions_num, time_elapsed):
     else:
         print("Performance: Needs Improvement")
 
-    print(f"Time taken: {utils.format_duration(time_elapsed)}")  # 用时,精确到小数点后三位
+    print(f"Time taken: {utils.format_duration(time_elapsed)}")  # Time, accurate to three decimal places
 
 
 def save_results(user_name, score, time_elapsed):
@@ -186,7 +186,7 @@ def save_results(user_name, score, time_elapsed):
                 "time": time_elapsed,
                 "timestamp": timestamp
             })
-            # 按分数和时间排序
+            # Sort by score and time
             sorted_leaderboard = sorted(
                 leaderboard,
                 key=lambda x: (-x['score'], x['time'])
