@@ -15,5 +15,3 @@ def get_choice(valid_options, txt):
             print(f"Invalid input. Valid options: {', '.join(valid_options)}. Please re-enter.")
         else:
             return choice
-if __name__ == '__main__':
-    pass
