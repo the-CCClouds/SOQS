@@ -22,11 +22,11 @@ def main():
         os.mkdir("data")
 
     # Initialize the question file
-    if not os.path.exists("data/question.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
+    if not os.path.exists("data/question.json"):  # If it does not exist, open it for writing (automatically create a new one) and write an empty list
         with open("data/question.json", "w", encoding="utf-8") as f:
             json.dump([], f)
     # Initialize the leaderboard file
-    if not os.path.exists("data/leaderboard.json"):  # 如果不存在，以写入状态打开（自动新建），并写入空列表
+    if not os.path.exists("data/leaderboard.json"):  # If it does not exist, open it for writing (automatically create a new one) and write an empty list
         with open("data/leaderboard.json", "w", encoding="utf-8") as f:
             json.dump([], f)
 
